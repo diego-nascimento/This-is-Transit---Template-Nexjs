@@ -34,7 +34,6 @@ export const Grid1 = styled.div`
 
 export const Item = styled.div`
   display: flex;
-
   justify-content: center;
   flex-direction: column;
   flex: 1;
@@ -97,5 +96,14 @@ export const ListaRedeSociais = styled.ul`
 
   li {
     margin-left: 15px;
+    border-radius: 100%;
+    padding: 10px 10px;
+    background: red;
+  }
+
+  .icon {
+    height: 25px;
+    width: 25px;
+    color: white;
   }
 `;

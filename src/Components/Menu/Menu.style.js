@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Navegacao = styled.nav`
-  background: ${(props) => (props.isIndex ? 'none' : '#383b43')};
   width: 100%;
   height: 100px;
   display: flex;
@@ -9,11 +8,13 @@ export const Navegacao = styled.nav`
   justify-content: space-between;
   padding: 0px 30px;
   color: white;
-  position: absolute;
   z-index: 999;
+  background: ${(props) => (props.isIndex == 1 ? 'none' : '#222')};
+  position: ${(props) => (props.isIndex == 1 ? 'absolute' : 'block')};
 
   @media (max-width: 1050px) {
     background: none;
+    position: absolute;
   }
 
   .Sumir {

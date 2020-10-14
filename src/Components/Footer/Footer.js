@@ -7,7 +7,12 @@ import {
   ListaMensagens,
   ListaRedeSociais,
 } from './footer.style';
-import { FaFacebook } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaGooglePlusG,
+  FaLinkedinIn,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -50,12 +55,18 @@ const Footer = () => {
             <li>Images: Unsplash</li>
           </ListaMensagens>
           <ListaRedeSociais>
-            <li>
-              <FaFacebook />
+            <li style={{ background: '#39599f' }}>
+              <FaFacebookF className="icon" />
             </li>
-            <li>insta</li>
-            <li>linked</li>
-            <li>Twittter</li>
+            <li style={{ background: '#2daae4' }}>
+              <FaTwitter className="icon" />
+            </li>
+            <li style={{ background: '#c91e1f' }}>
+              <FaGooglePlusG className="icon" />
+            </li>
+            <li style={{ background: '#31516a' }}>
+              <FaLinkedinIn className="icon" />
+            </li>
           </ListaRedeSociais>
         </Grid2>
       </Container>

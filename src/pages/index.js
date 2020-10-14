@@ -6,7 +6,7 @@ import Section4 from '../Components/PageIndex/Section4-index-Form/Section4-index
 
 export default function Home() {
   return (
-    <Layout isIndex={true} title="Home">
+    <Layout isIndex={1} title="Home">
       <Painel />
       <Section2 />
       <Section3 />
