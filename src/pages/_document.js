@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
           />
           <script
             src="https://unpkg.com/react/umd/react.production.min.js"
-            crossorigin
+            crossOrigin={true}
           ></script>
 
           <script
