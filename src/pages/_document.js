@@ -31,6 +31,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* <link rel="shortcut icon" href={favicon} /> */}
+          <link rel="shortcut icon" href="/favico.png" />
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
