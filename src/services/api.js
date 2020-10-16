@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.APIURL,
+  baseURL: 'https://transit.diego-nascimento.com/api/',
 });
 
 export default api;
