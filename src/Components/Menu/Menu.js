@@ -40,7 +40,7 @@ const Menu = ({ isIndex }) => {
         <Nav className="ml-auto black">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/generic">Generic</Nav.Link>
-          <Nav.Link href="#link">Elements</Nav.Link>
+          <Nav.Link href="/elements">Elements</Nav.Link>
           <Item>
             <button>Sign Up</button>
           </Item>

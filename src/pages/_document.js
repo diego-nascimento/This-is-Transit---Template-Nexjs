@@ -50,12 +50,12 @@ export default class MyDocument extends Document {
 
           <script
             src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-            crossorigin
+            crossOrigin={true}
           ></script>
 
           <script
             src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-            crossorigin
+            crossOrigin={true}
           ></script>
         </Head>
         <body>

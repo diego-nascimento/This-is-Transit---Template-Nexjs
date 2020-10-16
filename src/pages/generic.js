@@ -14,3 +14,35 @@ export default function Generic() {
     </Layout>
   );
 }
+
+export async function getStaticPaths() {
+  const response = await api.get('cars_ids');
+  const dado = [];
+
+  response.data.forEach((element) => {
+    dado.push({
+      params: {
+        id: element._id,
+      },
+    });
+  });
+
+  return {
+    paths: dado,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const response = await api.get('produtos/categoria', {
+    params: {
+      categoria_id: params.id,
+    },
+  });
+
+  return {
+    props: {
+      data: response.data,
+    },
+  };
+}
