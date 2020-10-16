@@ -1,7 +1,7 @@
 import React from 'react';
 import { Lista, Item } from './ListaElements.style';
 import Button from '../../Blue-Button/BlueButton';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 export default function ListaElements({ cars }) {
   return (
