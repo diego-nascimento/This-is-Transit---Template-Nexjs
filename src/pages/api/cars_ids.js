@@ -1,14 +1,12 @@
+import data from './data';
+
 export default function handler(req, res) {
   res.setHeader('Content-Type', 'application/json');
-  res.status(200).json([
-    {
-      id: '0',
-    },
-    {
-      id: '1',
-    },
-    {
-      id: '2',
-    },
-  ]);
+  const dados = [];
+  data.forEach((element) => {
+    dados.push({
+      id: element.id,
+    });
+  });
+  res.status(200).json(dados);
 }
