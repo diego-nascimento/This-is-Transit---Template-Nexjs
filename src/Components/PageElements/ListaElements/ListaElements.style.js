@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Lista = styled.ul`
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
   grid-gap: 30px;

@@ -16,7 +16,6 @@ const Layout = ({ children, isIndex, title }) => {
       <Head>
         <title>This is Transit - {title}</title>
       </Head>
-
       <Menu isIndex={estadoMenu} />
 
       <main>{children}</main>
