@@ -20,7 +20,7 @@ export default function Generic(props) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const response = await api.get('/api/cars');
     return {
