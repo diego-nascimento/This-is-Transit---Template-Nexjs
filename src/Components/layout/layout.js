@@ -22,7 +22,7 @@ const Layout = ({ children, isIndex, title }) => {
         ></meta>
         <meta
           property="og:image"
-          content="/https://transit.diego-nascimento.com/trafego.jpg"
+          content="/https://transit.diego-nascimento.com/favico.png"
         ></meta>
       </Head>
       <Menu isIndex={estadoMenu} />
