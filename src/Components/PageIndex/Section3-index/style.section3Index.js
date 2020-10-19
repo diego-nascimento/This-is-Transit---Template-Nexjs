@@ -12,7 +12,7 @@ export const Lista = styled.section`
   margin-top: 50px;
 
   @media (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 
