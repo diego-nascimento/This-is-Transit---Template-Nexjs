@@ -26,7 +26,11 @@ export default function Section4Index() {
             cols="30"
             rows="10"
           ></textarea>
-          <Botao backgroundColor="#383d43" borderRadius="50px">
+          <Botao
+            backgroundColor="#383d43"
+            borderRadius="50px"
+            Margin="20px 10px"
+          >
             Send Message
           </Botao>
         </Formulario>

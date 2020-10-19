@@ -5,6 +5,7 @@ const BlueButton = ({
   borderRadius,
   fontSize,
   Width,
+  Margin,
 }) => {
   return (
     <Button
@@ -13,6 +14,7 @@ const BlueButton = ({
         borderRadius: borderRadius,
         fontSize: fontSize,
         width: Width,
+        margin: Margin,
       }}
     >
       {children}
