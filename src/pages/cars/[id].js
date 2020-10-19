@@ -1,12 +1,25 @@
 import api from '../../services/api';
 import Layout from '../../Components/layout/layout';
+import { Item, Botao } from './cars[id].styles';
+import Link from 'next/link';
 
 const Carro = ({ data }) => {
   return (
     <Layout isIndex={'0'} title={data.name}>
-      <h1>{data.name}</h1>
-      <p>{data.description}</p>
-      <img src={data.photo[0].url} alt={data.photo[0].description} />
+      <Item>
+        <Link href="/elements">
+          <Botao>Voltar</Botao>
+        </Link>
+        <h1>{data.name}</h1>
+        <img src={data.photo[0].url} alt={data.photo[0].description} />
+
+        <p>
+          <span style={{ color: 'black', fontWeight: 'bold' }}>
+            Descrição:{' '}
+          </span>
+          {data.description}
+        </p>
+      </Item>
     </Layout>
   );
 };

@@ -6,6 +6,10 @@ export const Lista = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   margin-top: 20px;
   grid-gap: 30px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Item = styled.li`
@@ -17,22 +21,14 @@ export const Item = styled.li`
   background: #eee;
   border-radius: 15px;
   overflow: hidden;
-  padding: 5px 5px;
+  padding:20px 10px;
   -webkit-box-shadow: 0px 1px 10px 2px rgba(87, 87, 87, 1);
   -moz-box-shadow: 0px 1px 10px 2px rgba(87, 87, 87, 1);
   box-shadow: 0px 1px 10px 2px rgba(87, 87, 87, 1);
 
-  :nth-child(1) {
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
-
-  :nth-child(2) {
-    grid-row: 1/2;
-  }
-
-  :nth-child(3) {
-    grid-row: 2/3;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    }
   }
 
   h3 {
