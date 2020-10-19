@@ -20,6 +20,10 @@ const Layout = ({ children, isIndex, title }) => {
           name="description"
           content="Test your website with the free SEO check from Seobility and get tips for a better search engine optimization."
         ></meta>
+        <meta
+          property="og:image"
+          content="/https://transit.diego-nascimento.com/trafego.jpg"
+        ></meta>
       </Head>
       <Menu isIndex={estadoMenu} />
 
