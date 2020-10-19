@@ -32,7 +32,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
-    const response = await api.get(`/api/cars` + params.id);
+    console.log(params.id);
+    const response = await api.get(`/api/cars/` + params.id);
+
     return {
       props: {
         data: response.data,
