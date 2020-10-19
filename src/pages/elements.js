@@ -13,7 +13,6 @@ export default function Generic(props) {
             <h2>Elements</h2>
             <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
           </div>
-          <Elements cars={props.data} />
         </Container>
       </FullSize>
     </Layout>
