@@ -15,6 +15,11 @@ const Layout = ({ children, isIndex, title }) => {
     <LayoutPage>
       <Head>
         <title>This is Transit - {title}</title>
+        <meta http-equiv="content-language" content="pt-br"></meta>
+        <meta
+          name="description"
+          content="Test your website with the free SEO check from Seobility and get tips for a better search engine optimization."
+        ></meta>
       </Head>
       <Menu isIndex={estadoMenu} />
 
