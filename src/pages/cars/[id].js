@@ -14,7 +14,7 @@ const Carro = ({ data }) => {
 export default Carro;
 
 export async function getStaticPaths() {
-  const response = await api.get('cars_ids');
+  const response = await api.get('/api/cars_ids');
   const dado = [];
 
   response.data.forEach((element) => {
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
-    const response = await api.get(`cars/` + params.id);
+    const response = await api.get(`/api/cars` + params.id);
     return {
       props: {
         data: response.data,

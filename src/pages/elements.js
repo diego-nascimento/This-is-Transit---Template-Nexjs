@@ -22,7 +22,7 @@ export default function Generic(props) {
 
 export async function getStaticProps() {
   try {
-    const response = await api.get('/cars');
+    const response = await api.get('/api/cars');
     return {
       props: {
         data: response.data,
