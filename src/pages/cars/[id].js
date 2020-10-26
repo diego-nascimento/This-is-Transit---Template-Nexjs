@@ -1,6 +1,8 @@
 import api from '../../services/api';
 import Layout from '../../Components/layout/layout';
 import PageCar from '../../Components/PageCarDesc/PageCarDesc';
+import Stripe from 'stripe';
+import stripeConfig from '../../config/stripe';
 
 const Carro = ({ data }) => {
   return (
@@ -13,7 +15,11 @@ const Carro = ({ data }) => {
 export default Carro;
 
 export async function getStaticPaths() {
-  const response = await api.get('/api/cars_ids');
+  const stripe = new Stripe(stripeConfig.secret_key, {
+    apiVersion: '2020-08-27',
+  });
+  const response = await stripe.prices.list();
+
   const dado = [];
 
   response.data.forEach((element) => {
@@ -23,6 +29,7 @@ export async function getStaticPaths() {
       },
     });
   });
+
   return {
     paths: dado,
     fallback: false,
@@ -31,12 +38,17 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
-    console.log(params.id);
-    const response = await api.get(`/api/cars/` + params.id);
+    const stripe = new Stripe(stripeConfig.secret_key, {
+      apiVersion: '2020-08-27',
+    });
+
+    const price = await stripe.prices.retrieve(params.id);
+    const product = await stripe.products.retrieve(price.product);
+    product.price = price;
 
     return {
       props: {
-        data: response.data,
+        data: product,
       },
     };
   } catch (error) {

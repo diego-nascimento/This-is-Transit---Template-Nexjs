@@ -11,7 +11,7 @@ export const Item = styled.section`
   padding: 0px 10px;
 
   img {
-    width: 80%;
+    width: 40%;
     margin: 20px 0px;
     border-radius: 15px;
   }

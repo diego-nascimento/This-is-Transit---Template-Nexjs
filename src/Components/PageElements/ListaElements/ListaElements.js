@@ -10,10 +10,16 @@ export default function ListaElements({ cars }) {
         return (
           <Item key={car.id}>
             <div>
-              <img src={car.photo[0].url} alt={car.photo.description} />
+              <img src={car.images[0]} alt={car.name} />
               <h3>{car.name}</h3>
+              <h3>
+                {Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL',
+                }).format(car.price.unit_amount / 100)}
+              </h3>
             </div>
-            <Link href={'/cars/' + car.id} style={{ width: '100%' }}>
+            <Link href={'/cars/' + car.price.id} style={{ width: '100%' }}>
               <a style={{ width: '100%' }}>
                 <Button fontSize="1rem" Width="90%" backgroundColor="#222">
                   Ver mais

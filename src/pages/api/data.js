@@ -2,6 +2,7 @@ const data = [
   {
     id: '0',
     name: 'Ferrari',
+    price: 10000,
     description:
       'Ferrari é uma fabricante italiana de carros esportivos de luxo com sede em Maranello. Fundada por Enzo Ferrari em 1939 na divisão de corridas da Alfa Romeo com o nome Auto Avio Costruzioni, a empresa construiu seu primeiro carro em 1940.',
     photo: [
@@ -22,6 +23,7 @@ const data = [
   {
     id: '1',
     name: 'Maserati',
+    price: 100,
     description:
       'he Maserati Quattroporte (Italian pronunciation: [ˌkwattroˈpɔrte]) is a four-door full-size luxury sports saloon produced by Italian automobile manufacturer Maserati. The name translated from Italian means "four doors". The car is currently in its sixth generation, with the first generation introduced in 1963.',
     photo: [
@@ -42,6 +44,7 @@ const data = [
   {
     id: '2',
     name: 'Mustang',
+    price: 1000000,
     description: `O Ford Mustang é um automóvel desportivo produzido pela Ford Motor Company. O carro foi apresentado ao público em 17 de abril de 1964 durante a New York World's Fair. O Mustang, apesar de ter sofrido grandes alterações ao longo dos anos é a mais antiga linha de automóveis da Ford. cujo nome se inspira na unica raça de cavalo selvagem do pais. Foi o primeiro "Muscle Car" da história, sendo seguido anos mais tarde por modelos concorrentes inspirados claramente nele.`,
     photo: [
       {
